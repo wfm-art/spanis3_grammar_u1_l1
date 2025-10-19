@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vocabulary — Spanish 3 · Unit 1 · Lesson 1 (iPad · Responsive)</title>
+<style>
+  :root{
+    --bg:#f7f7fb; --card:#fff; --ink:#1f2430; --muted:#5b6275; --line:#e7e9f2;
+    --pill:#eef3ff; --accent:#2d6cdf;
+    --serparecer:#1565c0; --gustar:#00897b;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif;
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  header{
+    padding:16px;border-bottom:1px solid var(--line);
+    background:linear-gradient(90deg,#edf2ff,#f7f8fc)
+  }
+  h1{margin:0;font-size:20px;font-weight:700}
+  .sub{margin:6px 0 0;color:var(--muted);font-size:14px}
+
+  .controls{
+    position:sticky;top:0;z-index:5;background:var(--bg);
+    display:grid;gap:10px;grid-template-columns:1fr; padding:12px 12px 8px;
+    border-bottom:1px solid var(--line)
+  }
+  @media (min-width: 920px){ .controls{grid-template-columns:1fr 420px}}
+
+  .search input{
+    width:100%;padding:12px 14px;border:1px solid #dfe3ee;border-radius:12px;font-size:16px;
+    min-height:44px;
+  }
+
+  .pillbar{display:flex;flex-wrap:wrap;gap:8px}
+  .pill{
+    padding:10px 14px;border-radius:999px;background:var(--pill);border:1px solid #dbe3ff;
+    cursor:pointer;font-size:15px;min-height:40px;display:flex;align-items:center
+  }
+  .pill.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+  .grid{
+    display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+    padding:12px; align-items:start
+  }
+  .card{
+    background:var(--card);border:1px solid #eceff7;border-radius:16px;padding:14px;
+    box-shadow:0 1px 3px rgba(0,0,0,.04)
+  }
+
+  .row{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+  .left{display:flex;align-items:flex-start;gap:10px;min-width:0}
+
+  .tag{
+    display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:6px 10px;
+    border-radius:999px;color:#fff;white-space:nowrap;min-height:28px
+  }
+  .tag.serparecer{background:var(--serparecer)}
+  .tag.gustar{background:var(--gustar)}
+
+  .title{
+    font-weight:800; line-height:1.25; font-size:18px;
+    overflow:hidden; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3;
+    max-width:60vw;
+  }
+  .subtitle{
+    margin-top:4px; color:var(--muted); font-size:14px; font-weight:600;
+  }
+  @media (min-width:920px){ .title{max-width:62ch}}
+
+  .actions{display:flex;gap:10px;flex-wrap:wrap}
+  a.btn{
+    display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;
+    border:1px solid #dfe3ee;background:#fafbff;color:#1f2430;text-decoration:none;cursor:pointer;
+    font-size:15px;min-height:42px; -webkit-tap-highlight-color: transparent;
+  }
+  a.btn:hover{border-color:#cfd6ea}
+
+  /* Responsive preview box (height set via JS to fit space) */
+  .embed{
+    margin-top:12px;border:1px solid #e5e8f3;border-radius:12px;overflow:hidden;background:#000;
+    min-height:260px; /* fallback; JS sets actual height responsively */
+  }
+  iframe{width:100%;height:100%;border:0}
+
+  footer{
+    padding:16px;color:#8a90a3;text-align:center;font-size:12px;border-top:1px solid var(--line)
+  }
+  .grid, .embed{ -webkit-overflow-scrolling: touch; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Vocabulary — Spanish 3 · Unit 1 · Lesson 1</h1>
+  <p class="sub">English-first titles with Spanish subtitles. Previews auto-fit iPad screen.</p>
+</header>
+
+<section class="controls" aria-label="Controls">
+  <div class="search">
+    <input id="q" type="search" inputmode="search" placeholder="Search (Ser/Parecer, Verbs like gustar, video, PDF)">
+  </div>
+  <div class="pillbar" id="cats" role="tablist" aria-label="Filters">
+    <span class="pill active" data-cat="all">All</span>
+    <span class="pill" data-cat="serparecer">Ser/Parecer</span>
+    <span class="pill" data-cat="gustar">Verbs like gustar</span>
+  </div>
+</section>
+
+<main class="grid" id="grid">
+  <!-- SER/PARECER -->
+  <article class="card" data-cat="serparecer">
+    <div class="row">
+      <div class="left">
+        <span class="tag serparecer">Ser/Parecer</span>
+        <div>
+          <div class="title">Ser and Seems/Appears (Parecer) + Adjective</div>
+          <div class="subtitle">Ser y Parecer + adjetivo · Video</div>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="https://drive.google.com/file/d/11Uyc1PFHAhATw2mjlEpqVRHGZeuNKw5c/view?usp=sharing" target="_blank" rel="noopener">Open in Drive</a>
+      </div>
+    </div>
+    <div class="embed">
+      <iframe src="https://drive.google.com/file/d/11Uyc1PFHAhATw2mjlEpqVRHGZeuNKw5c/preview" allow="autoplay"></iframe>
+    </div>
+  </article>
+
+  <article class="card" data-cat="serparecer">
+    <div class="row">
+      <div class="left">
+        <span class="tag serparecer">Ser/Parecer</span>
+        <div>
+          <div class="title">Ser and Seems/Appears (Parecer) + Adjective</div>
+          <div class="subtitle">Ser y Parecer + adjetivo · PDF</div>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="https://drive.google.com/file/d/19-NsVeZ_k9MRdIOWyIrW2NXNvppLRAkI/view?usp=sharing" target="_blank" rel="noopener">Open in Drive</a>
+      </div>
+    </div>
+    <div class="embed">
+      <iframe src="https://drive.google.com/file/d/19-NsVeZ_k9MRdIOWyIrW2NXNvppLRAkI/preview"></iframe>
+    </div>
+  </article>
+
+  <!-- VERBS LIKE GUSTAR -->
+  <article class="card" data-cat="gustar">
+    <div class="row">
+      <div class="left">
+        <span class="tag gustar">Verbs like gustar</span>
+        <div>
+          <div class="title">Interesar, Preocupar, Importar — Verbs like Gustar</div>
+          <div class="subtitle">Interesar, Preocupar, Importar · Video</div>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="https://drive.google.com/file/d/18kmos1YwRj7HsBpXmgkNNaV3IxqoDbao/view?usp=sharing" target="_blank" rel="noopener">Open in Drive</a>
+      </div>
+    </div>
+    <div class="embed">
+      <iframe src="https://drive.google.com/file/d/18kmos1YwRj7HsBpXmgkNNaV3IxqoDbao/preview" allow="autoplay"></iframe>
+    </div>
+  </article>
+
+  <article class="card" data-cat="gustar">
+    <div class="row">
+      <div class="left">
+        <span class="tag gustar">Verbs like gustar</span>
+        <div>
+          <div class="title">Interesar, Preocupar, Importar — Verbs like Gustar</div>
+          <div class="subtitle">Interesar, Preocupar, Importar · PDF</div>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="https://drive.google.com/file/d/1veYzXYnyjsAL41yBpTTGdazAxJLn77Sd/view?usp=sharing" target="_blank" rel="noopener">Open in Drive</a>
+      </div>
+    </div>
+    <div class="embed">
+      <iframe src="https://drive.google.com/file/d/1veYzXYnyjsAL41yBpTTGdazAxJLn77Sd/preview"></iframe>
+    </div>
+  </article>
+</main>
+
+<footer>Edit this HTML to add or remove resources. — S3 · U1 · L1</footer>
+
+<script>
+  // Search + Filters
+  const q = document.getElementById('q');
+  const pills = Array.from(document.querySelectorAll('.pill'));
+  const cards = Array.from(document.querySelectorAll('.card'));
+  let activeCat = 'all';
+
+  function applyFilters(){
+    const text = (q.value || '').toLowerCase().trim();
+    cards.forEach(c => {
+      const cats = (c.getAttribute('data-cat') || '').toLowerCase().split(' ');
+      const matchCat = (activeCat === 'all' || cats.includes(activeCat));
+      const matchText = (text === '' || c.textContent.toLowerCase().includes(text));
+      c.style.display = (matchCat && matchText) ? '' : 'none';
+    });
+    requestAnimationFrame(resizeEmbeds);
+  }
+
+  q.addEventListener('input', applyFilters);
+  pills.forEach(p => {
+    p.addEventListener('click', () => {
+      pills.forEach(x => x.classList.remove('active'));
+      p.classList.add('active');
+      activeCat = p.dataset.cat;
+      applyFilters();
+    });
+  });
+
+  // Fully responsive previews with a viewport cap
+  function targetHeightForWidth(w){
+    let ratio;
+    if (w >= 900)       ratio = 3/4;  // wide -> 4:3
+    else if (w >= 600)  ratio = 2/3;  // medium -> 3:2
+    else                ratio = 9/16; // narrow -> 16:9
+    const hByWidth = Math.round(w * ratio);
+    const hByViewport = Math.floor(window.innerHeight * 0.82);
+    return Math.min(Math.max(300, hByWidth), hByViewport); // min 300px, max 82vh
+  }
+
+  function resizeEmbeds(){
+    document.querySelectorAll('.embed').forEach(box=>{
+      const w = box.clientWidth || box.getBoundingClientRect().width;
+      box.style.height = targetHeightForWidth(w) + 'px';
+      const iframe = box.querySelector('iframe');
+      if (iframe) iframe.style.height = '100%';
+    });
+  }
+
+  const ro = new ResizeObserver(resizeEmbeds);
+  ro.observe(document.documentElement);
+  window.addEventListener('orientationchange', ()=>setTimeout(resizeEmbeds, 120));
+  window.addEventListener('load', resizeEmbeds);
+</script>
+</body>
+</html>
